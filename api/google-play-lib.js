@@ -10,7 +10,7 @@ const PORT = 3000;
 
 app.get("/", async (req, res) => {
   const message = "Welcome to Python Js Web";
-  res.json(message);
+  res.json({ message });
 });
 app.get("/app-details", async (req, res) => {
   const appId = req.query.id;
@@ -96,8 +96,8 @@ app.get("/appstore/suggest", async (req, res) => {
   res.json(suggestions);
 });
 
-app.listen(PORT, () => {
-  console.log(`API running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`API running on http://localhost:${PORT}`);
+// });
 
 // /app-review/rating?appId=com.dxco.pandavszombies
