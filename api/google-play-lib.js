@@ -7,6 +7,11 @@ app.use(cors());
 const PORT = 3000;
 
 // google play apis
+
+app.get("/", async (req, res) => {
+  const message = "Welcome to Python Js Web";
+  res.json(message);
+});
 app.get("/app-details", async (req, res) => {
   const appId = req.query.id;
   const lang = "en";
