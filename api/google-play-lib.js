@@ -96,8 +96,8 @@ app.get("/appstore/suggest", async (req, res) => {
   res.json(suggestions);
 });
 
-// app.listen(PORT, () => {
-//   console.log(`API running on http://localhost:${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`API running on http://localhost:${PORT}`);
+});
 
 // /app-review/rating?appId=com.dxco.pandavszombies
